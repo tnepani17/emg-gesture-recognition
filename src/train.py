@@ -75,4 +75,6 @@ def train_model(data_root):
     return model
 
 if __name__ == "__main__":
-    trained_model = train_model(data_root="path/to/your/data") 
+    # default directory is set to data/DB2 - refer to README for setup instructions
+    data_root = os.environ.get("EMG_DATA_PATH", "./data/DB2")
+    trained_model = train_model(data_root=data_root) 
