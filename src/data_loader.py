@@ -1,4 +1,5 @@
 import os
+import torch
 import numpy as np
 from torch.utils.data import Dataset
 from scipy.io import loadmat
@@ -36,9 +37,10 @@ def load_and_preprocess_data(data_root):
 
     for subject_id in range(1, NUM_SUBJECTS + 1):
         print(f"Processing subject {subject_id}")
-        base_path = os.path.join(data_root, f'DB2_s{subject_id}')        subject_segments = []
+        base_path = os.path.join(data_root, f'DB2_s{subject_id}/')        subject_segment_labels = []
+        subject_segments = []
         subject_segment_labels = []
-
+        
         for exercise in EXERCISES:
             file_path = os.path.join(base_path, f'S{subject_id}_{exercise}_A1.mat')
             try:
