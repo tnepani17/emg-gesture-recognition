@@ -13,7 +13,6 @@ Affiliations: Neurotechnology @ Berkeley, University of California, Berkeley
 
 ## Licensing and Usage Rights
 This model is licensed under the AI Pubs OpenRAIL-M License.
-
 You may use, modify, and redistribute the model, but you must not use it for harmful, illegal, or discriminatory purposes.
 In addition to the requirements of the OpenRAIL-M license, any public or published use of this model or its derivatives must include visible credit to the original authors ([Tvisha Nepani and Emma Shen]) and a link to this repository.
 
